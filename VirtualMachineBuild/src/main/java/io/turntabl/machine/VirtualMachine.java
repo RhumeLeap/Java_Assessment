@@ -46,29 +46,18 @@ public abstract class VirtualMachine {
         this.requestorName = requestorName;
     }
 
-    public long getNumberOfCPU() {
-        return numberOfCPU;
-    }
+    public abstract long getNumberOfCPU();
 
-    public void setNumberOfCPU(long numberOfCPU) {
-        this.numberOfCPU = numberOfCPU;
-    }
+    public abstract void setNumberOfCPU(long numberOfCPU);
 
-    public int getSizeOfRAM() {
-        return sizeOfRAM;
-    }
+    public abstract int getSizeOfRAM();
 
-    public void setSizeOfRAM(int sizeOfRAM) {
-        this.sizeOfRAM = sizeOfRAM;
-    }
+    public abstract void setSizeOfRAM(int sizeOfRAM);
 
-    public int getSizeOfHardDisk() {
-        return sizeOfHardDisk;
-    }
 
-    public void setSizeOfHardDisk(int sizeOfHardDisk) {
-        this.sizeOfHardDisk = sizeOfHardDisk;
-    }
+    public abstract int getSizeOfHardDisk();
+
+    public abstract void setSizeOfHardDisk(int sizeOfHardDisk);
 
     public static int getMaximumVmBuiltDaily() {
         return MAXIMUM_VM_BUILT_DAILY;
