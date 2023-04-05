@@ -11,7 +11,6 @@ public class DesktopVM extends VirtualMachine {
         this.buildNumber = buildNumber;
     }
 
-
     @Override
     public long getNumberOfCPU() {
         return this.numberOfCPU;
@@ -62,7 +61,6 @@ public class DesktopVM extends VirtualMachine {
 
     @Override
     public String toString() {
-        return "DesktopVM { windowVersion='" + windowVersion + '\'' +
-                ", buildNumber='" + buildNumber + "}";
+        return "DesktopVM { windowVersion='" + windowVersion + '\'' + ", buildNumber='" + buildNumber + "}";
     }
 }
