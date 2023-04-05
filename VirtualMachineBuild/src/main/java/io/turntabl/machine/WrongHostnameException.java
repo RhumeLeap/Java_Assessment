@@ -1,5 +1,8 @@
 package io.turntabl.machine;
 
+/**
+ * @author: Rhume Disi
+ */
 public class WrongHostnameException extends IllegalArgumentException {
 
     private String message;
