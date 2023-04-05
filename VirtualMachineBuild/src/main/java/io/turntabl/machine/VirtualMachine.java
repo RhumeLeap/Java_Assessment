@@ -4,9 +4,10 @@ public abstract class VirtualMachine {
 
     private String hostname;
     private String requestorName;
-    private long numberOfCPU;
-    private int sizeOfRAM;
-    private int sizeOfHardDisk;
+    protected long numberOfCPU;
+    protected int sizeOfRAM;
+    protected int sizeOfHardDisk;
+
     private static int MAXIMUM_VM_BUILT_DAILY = 999;
 
     public VirtualMachine(String hostname, String requestorName) {
